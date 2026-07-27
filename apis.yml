@@ -1,19 +1,44 @@
 aid: insentai
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/insentai.png
 name: Insent.ai
-description: Insent.ai is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Insent.ai was a Boston-based, Techstars-backed B2B conversational marketing platform that
+  let marketing and sales teams engage website visitors in real time with human-first chat, visitor
+  identification, routing, and meeting booking. ZoomInfo acquired Insent in July 2021 and rebranded the
+  product as ZoomInfo Chat; the insent.ai domain now serves ZoomInfo Chat. As a standalone company
+  Insent.ai no longer operates its own developer portal, documentation, or public API surface, so the
+  enrichment pipeline found no first-party API artifacts to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/insentai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
+x-status: acquired
+x-acquired-by: zoominfo
+x-acquired-date: '2021-07'
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Conversational Marketing
+- Chat
+- Sales Engagement
+- MarTech
+- B2B
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/insentai-domain-security.yml
 - type: Website
   url: https://insent.ai/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
